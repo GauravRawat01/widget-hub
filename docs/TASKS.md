@@ -7,7 +7,7 @@ Status values: `todo` | `in-progress` | `blocked` | `done`. Update this file as 
 | ID | Task | Owner | Depends on | Status |
 |---|---|---|---|---|
 | T0.1 | Confirm PRD, resolve open questions | requirements-analyst | — | done |
-| T0.2 | Architecture note: folder layout, widget registry contract, routing, state approach (docs/ARCHITECTURE.md) | architect | T0.1 | todo |
+| T0.2 | Architecture note: folder layout, widget registry contract, routing, state approach (docs/ARCHITECTURE.md) | architect | T0.1 | done |
 | T0.3 | Scaffold Vite + React + TS, ESLint, Prettier, Tailwind, React Router | coder | T0.2 | todo |
 | T0.4 | Test harness: Vitest + RTL + Playwright, npm scripts, coverage threshold | tester | T0.3 | todo |
 | T0.5 | CI workflow (lint, typecheck, test, build) on push/PR | coder | T0.4 | todo |
