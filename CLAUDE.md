@@ -18,6 +18,7 @@ Vite + React + TypeScript (strict), Tailwind CSS, React Router, Vitest + React T
 - Never use `eval` or `new Function`. No `any` without a comment explaining why.
 - Accessibility is required: labelled controls, keyboard support, visible focus, AA contrast.
 - Small, focused commits, one task ID per branch: `feat/T2.2-calc-engine`. Commit format: `T2.2: add calculator engine`.
+- Branching: `dev` is the integration branch. Always pull `dev`, branch from it (one task ID per branch), and merge back into `dev` via PR. `dev` -> `main` merges are done separately by the human (possibly a scheduled monthly job later); agents never merge into `main`.
 
 ## Agent workflow
 Run the main session as the orchestrator: `claude --agent orchestrator`.
@@ -29,4 +30,4 @@ Only the orchestrator edits `docs/TASKS.md` statuses. Reviewers never edit code;
 - Read this file and the relevant task in `docs/TASKS.md` before starting.
 - Stay inside your role; hand back with a short summary: what changed, files touched, open issues.
 - Do not add dependencies without the architect's approval (record the reason in `docs/DECISIONS.md`).
-- Never commit secrets. Never push to main directly.
+- Never commit secrets. Never push to `main` or `dev` directly; changes reach `dev` only through a PR.
