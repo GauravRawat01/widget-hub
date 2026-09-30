@@ -11,3 +11,4 @@ Format: `YYYY-MM-DD — Decision — Why — Alternatives considered`
 - 2026-09-30 — T0.1: deployment target left open (human deferred) — not needed until release — Vercel/Netlify/GitHub Pages candidates.
 - 2026-09-30 — T0.1: PRD clarifications C1-C8 accepted as defaults (a11y metric, 1e-9 conversion tolerance, browser matrix, 404 page, in-repo SVG icons, session-only memory/history, 15-sig-digit display, 6-sig-fig converter display) — unblock architecture — leave ambiguous.
 - 2026-09-30 — Default branch renamed master -> main — matches CLAUDE.md conventions.
+- 2026-09-30 — Branching: `dev` is the integration branch; task branches (`feat/<TaskID>-<slug>`) are cut from `dev` and merged back via PR; `dev` -> `main` handled separately by the human (maybe automated monthly later) — keeps `main` stable while tasks integrate continuously — trunk-based on `main`.
